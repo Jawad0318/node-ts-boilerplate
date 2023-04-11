@@ -1,0 +1,48 @@
+{
+    "compileOnSave": false,
+    "compilerOptions": {
+      "target": "es2018",
+      "module": "commonjs",
+      "moduleResolution": "node",
+      "outDir": "dist",
+      "strict": true,
+      "strictPropertyInitialization": true,
+      "noImplicitAny": true,
+      "noImplicitThis": true,
+      "noImplicitReturns": true,
+      "noUnusedLocals": true,
+      "noUnusedParameters": true,
+      "esModuleInterop": true,
+      "baseUrl": "src",
+      "paths": {
+        "@/*": ["*"],
+        "@config": ["config"],
+        "@database": ["database"],
+        "@controllers/*": ["controllers/*"],
+        "@interfaces/*": ["interfaces/*"],
+        "@middleware/*": ["middleware/*"],
+        "@models/*": ["models/*"],
+        "@routes/*": ["routes/*"],
+        "@services/*": ["services/*"],
+        "@utils/*": ["utils/*"]
+      },
+      "emitDecoratorMetadata": true,
+      "experimentalDecorators": true,
+      "sourceMap": true,
+      "pretty": true,
+      "lib": ["es2018", "esnext.asynciterable"],
+      "typeRoots": ["node_modules/@types"],
+      "resolveJsonModule": true
+    },
+    "include": ["src/**/*"],
+    "exclude": [
+      "node_modules",
+      "src/**/__tests__",
+      "src/**/*.test.ts",
+      "src/**/*.spec.ts",
+      "src/http",
+      "src/logs",
+      "tests"
+    ]
+  }
+  
